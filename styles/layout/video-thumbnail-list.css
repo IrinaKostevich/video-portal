@@ -1,0 +1,9 @@
+.l-video-thumbnail-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.l-video-thumbnail-list > * {
+    margin: 2rem 1rem;
+} 

@@ -1,0 +1,51 @@
+.carousel {
+    box-sizing: content-box;
+    position: relative;
+    width: 480px;
+    height: 360px;
+    border: 1px solid gray;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.carousel .carousel-content {
+    transition: transform 1s ease-out;
+}
+
+.carousel .carousel-list {
+    display: flex;
+}
+
+.carousel .carousel-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel .carousel-item-header {
+    position: absolute;
+    top: 85%;
+    max-width: 90%;
+    height: 1.5rem;
+    padding: 0.25rem 1rem;
+    border-radius: 0.25rem;
+    background-color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.carousel .carousel-btn.carousel-btn--prev {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    z-index: 2;
+}
+
+.carousel .carousel-btn.carousel-btn--next {
+    position: absolute;
+    top: 50%;
+    left: 450px;
+    z-index: 2;
+}

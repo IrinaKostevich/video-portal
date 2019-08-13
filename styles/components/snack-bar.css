@@ -1,0 +1,56 @@
+.snack-bar {
+    width: 20rem;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 10px 0px #9E9E9E;
+    background-color: #bbb6b5;
+    color: #3c3a3a;
+}
+
+.snack-bar .snack-bar-text {
+    text-align: center;
+}
+
+/* Status */
+.snack-bar.snack-bar--success {
+    background-color: #89b789fa;
+    color: #024202;
+}
+
+.snack-bar.snack-bar--error {
+    background-color: #f44336fa;
+    color: #5d0303;
+}
+
+/* Animation */
+.snack-bar--show {
+    position: fixed;
+    top: 90vh;
+    left: calc(50vw - 10rem);
+    animation: snack-bar-show 1s ease-in-out;
+}
+
+.snack-bar--hide {
+    animation: snack-bar-hide 1s ease-in-out;
+}
+
+@keyframes snack-bar-show {
+    from {
+        top: 110vh;
+    }
+
+    to {
+        top: 90vh;
+    }
+}
+
+@keyframes snack-bar-hide {
+    from {
+        top: 90vh;
+    }
+
+    to {
+        top: 110vh;
+    }
+}
+

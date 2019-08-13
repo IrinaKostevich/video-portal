@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Portal</title>
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="./styles/vendor/reset.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="./scripts/index.js" type="module"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="js-carousel">
+        </div>
+        <form class="js-search-form search-form" role="search">
+            <div class="input-group">
+                <input class="js-search-input input-group-input" type="search" placeholder="Search for..." size="40"
+                    maxLength="200">
+                <button class="js-search-button input-group-button">
+                    <img src="./images/search-icon.png" alt="search button" width="25">
+                </button>
+            </div>
+        </form>
+    </header>
+    <main>
+        <section class="js-video-results"></section>
+    </main>
+</body>
+
+</html>

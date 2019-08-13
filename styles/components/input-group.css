@@ -1,0 +1,40 @@
+.input-group {
+    display: flex;
+    align-items: stretch;
+    height: 2.5rem;
+}
+
+.input-group .input-group-input {
+    padding: 0.5rem 1rem;
+    border: 1px solid gray;
+    border-right: 0;
+    border-radius: 1rem 0 0 1rem;
+    font-size: 1.25rem;
+    text-overflow: ellipsis;
+}
+
+.input-group .input-group-input:focus {
+    outline: none;
+    border-color: rgb(39, 156, 202);
+    border-width: 2px;
+    box-shadow:  0 0 8px gray;
+}
+
+.input-group .input-group-input:focus + .input-group-button {
+    border-color: rgb(39, 156, 202);
+    border-width: 2px;
+    box-shadow:  0 0 8px gray;
+}
+
+.input-group .input-group-button {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    border: 1px solid gray;
+    border-left: 0;
+    border-radius: 0 1rem 1rem 0;
+}
+
+.input-group .input-group-button:hover {
+    cursor: pointer;
+}
